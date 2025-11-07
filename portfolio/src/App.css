@@ -1,0 +1,320 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+ 
+  justify-content: center;
+  
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.hero{
+ 
+  color:white;
+    
+  width:80vw;
+  border:5px solid rgb(0, 0, 0);
+  height:80vh;
+  background-image: url("./zainablight.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+
+}
+.levels{
+   color:white;
+    
+  width:80vw;
+
+  height:80vh;
+  background-image: url("./levelsbg.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border:5px solid black;
+   /* display: flex;
+   justify-content: center;
+   align-items: center; */
+ flex-direction: column;
+ flex-wrap: wrap;
+
+ color:brown;
+}
+.btn{
+   width:100px;
+   height:80px;
+   cursor:pointer;
+   margin-top:29rem;
+   margin-right:1rem;
+}
+.btn:active{
+   transform:scale(0.95)
+}
+
+
+
+.level{
+  padding:0;
+  margin:0
+}
+.levelbtns{
+   width:300px;
+   height:95px;
+   cursor:pointer;
+
+}
+.levelbtns:active{
+   transform:scale(0.95);
+
+}
+.about{
+  color:white;
+    
+  width:80vw;
+  
+  height:80vh;
+  background-image: url("./aboutbg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border:5px solid black;
+  color:black;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+}
+.nav{
+  background-color: rgb(57, 23, 23);
+  color:white;
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.hey{
+  font-size: large;
+}
+.edu{
+  border: 1px solid gray;
+  background-color: rgba(240, 248, 255, 0.358);
+}
+.intro{
+  background-color: rgba(240, 248, 255, 0.314);
+  display: flex;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.about::-webkit-scrollbar{
+  width:6px;
+}
+.about::-webkit-scrollbar-track{
+  background: transparent;
+}
+.about::-webkit-scrollbar-thumb{
+  background-color: rgba(255, 255, 255, 0.616);
+  border-radius: 10px;
+}
+.intro img{
+  width:100px;
+  height:100px;
+  border-radius: 50%;
+margin-right:50px
+}
+
+
+.project{
+  color:white;
+    
+  width:80vw;
+  
+  height:80vh;
+  background-image: url("./projectsbg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border:5px solid black;
+  color:rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  
+}
+.project::-webkit-scrollbar{
+  width:6px;
+}
+.project::-webkit-scrollbar-track{
+  background: transparent;
+}
+.project::-webkit-scrollbar-thumb{
+  background-color: rgba(255, 255, 255, 0.616);
+  border-radius: 10px;
+}
+.basket{
+  background-color: rgba(19, 42, 62, 0.281);
+}
+.port{
+   background-color: rgba(19, 42, 62, 0.281);
+}
+.skills{
+   color:white;
+    
+  width:80vw;
+  
+  height:80vh;
+  background-image: url("./skillsbg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border:5px solid black;
+  color:rgb(255, 255, 255);
+ display: flex;
+  flex-direction: column;
+
+}
+.development{
+  display: flex;
+ flex-wrap: wrap;
+ justify-content: center;
+ align-items: center;
+}
+.development .bt{
+  padding:10px;
+  margin:10px;
+  border: 1px solid gray;
+  border-radius: 25px;
+  box-shadow: 2px 2px 5px palevioletred;
+
+}
+.development .bt:hover{
+  box-shadow: -5px 5px 5px rgb(189, 93, 125);
+ 
+}
+.expr{
+ color:white;
+    
+  width:80vw;
+  
+  height:80vh;
+  background-image: url("./experiencebg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border:5px solid black;
+  color:rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  }
+  .expr .img{
+   display: flex;
+   flex-direction: row;
+  }
+  .expr .img img{
+  height:200px;
+  width: 200px;;
+  }
+
+  .skills .img{
+    display: flex;
+    flex-direction: row-reverse;margin: 0;
+    padding: 0;
+  }
+  .skills .img img{
+    height:200px;
+  width: 200px;
+
+
+  }
+  .bonus{
+     color:white;
+    
+  width:80vw;
+  
+  height:80vh;
+  background-image: url("./bonusbg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border:5px solid black;
+  color:rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  }
+
+  .bonus .contact .img{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .bonus .projectlink .img{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .bonus .contact .img  img{
+   height:100px;
+   width:100px;
+   border:3px solid black;
+   border-radius: 25%;
+box-shadow: 5px 5px 5px rgb(27, 27, 93);
+  }
+  .bonus .projectlink .img  img{
+   height:100px;
+   width:100px;
+   border:3px solid black;
+   border-radius: 25%;
+box-shadow: 5px 5px 5px rgb(27, 27, 93);
+  }
+  .bonus .contact .img a{
+    text-decoration: none;
+    color: white;
+  }
+  .bonus .projectlink .img a{
+    text-decoration: none;
+    color: white;
+  }
+   .bonus img:active{
+     transform:scale(0.95);
+   }
+  
+  @media (max-width:895px){
+ .btn{
+   
+   cursor:pointer;
+   margin-top:25rem;
+   margin-right:2rem;
+}
+
+}
+
+@media (max-width:650px){
+  .hero{
+    background-image: url("./mobilebg.png");
+    background-size: cover;
+  }
+  .about .intro{
+ display: flex;
+ flex-direction: column;
+  }
+  .bonus .contact .img{
+    flex-direction: column;
+  }
+  .bonus .projectlink .img{
+    flex-direction: column;
+  }
+}
