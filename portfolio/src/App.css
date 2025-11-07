@@ -27,7 +27,7 @@
   width:80vw;
   border:5px solid rgb(0, 0, 0);
   height:80vh;
-  background-image: url("./zainablight.png");
+  background-image: url("/zainablight.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -40,7 +40,7 @@
   width:80vw;
 
   height:80vh;
-  background-image: url("./levelsbg.jpeg");
+  background-image: url("/levelsbg.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -86,7 +86,7 @@
   width:80vw;
   
   height:80vh;
-  background-image: url("./aboutbg.png");
+  background-image: url("/aboutbg.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -142,7 +142,7 @@ margin-right:50px
   width:80vw;
   
   height:80vh;
-  background-image: url("./projectsbg.png");
+  background-image: url("/projectsbg.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -175,7 +175,7 @@ margin-right:50px
   width:80vw;
   
   height:80vh;
-  background-image: url("./skillsbg.png");
+  background-image: url("/skillsbg.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -209,7 +209,7 @@ margin-right:50px
   width:80vw;
   
   height:80vh;
-  background-image: url("./experiencebg.png");
+  background-image: url("/experiencebg.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -245,7 +245,7 @@ margin-right:50px
   width:80vw;
   
   height:80vh;
-  background-image: url("./bonusbg.png");
+  background-image: url("/bonusbg.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -304,7 +304,7 @@ box-shadow: 5px 5px 5px rgb(27, 27, 93);
 
 @media (max-width:650px){
   .hero{
-    background-image: url("./mobilebg.png");
+    background-image: url("/mobilebg.png");
     background-size: cover;
   }
   .about .intro{
