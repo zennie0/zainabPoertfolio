@@ -39,7 +39,7 @@ function Bonus() {
                 <a   onClick={()=>clickSound.play()} href="https://www.linkedin.com/in/zainab-perween-37a0312aa/">
                     <img src="./imgin.jpeg" alt="" /><br />linkedin
                 </a>
-                <a  onClick={()=>clickSound.play()}  href="zainabperween577@gmail.com">
+                <a  onClick={()=>clickSound.play()}  href="mailto:zainabperween577@gmail.com">
                     <img src="./imgemail.jpeg" alt="" />
                     <br />Email
                 </a>
@@ -71,7 +71,7 @@ function Bonus() {
                 <a  onClick={()=>clickSound.play()}  href="https://weather-app-oihn.onrender.com/">
                     <img src="./wetimg.jpeg" alt="" /><br />Weather app
                 </a>
-                <a  onClick={()=>clickSound.play()}  href="https://portfolio-mk5j.onrender.com/">
+                <a  onClick={()=>clickSound.play()}  href="https://zainabpoertfolio.onrender.com">
                     <img src="./portimg.jpeg" alt="" /><br />Portfolio
                 </a>
             </div>
