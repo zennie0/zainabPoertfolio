@@ -32,65 +32,21 @@ function About() {
         <div className="intro">
           <img src={Pfp} alt="" />
           <div className="introo">
-            <h1>ZAINAB PERWEEN</h1>
+            <h1>Zainab Perween</h1>
             <p>
-              Full Stack web developer, student, Former teacher, and some times
-              artist
+             Full-Stack Developer · BCA '26 · Jamshedpur
             </p>
           </div>
         </div>
         <br />
 
-        <div className="hey">
-          <p>hi! i'm Zainab, a web developer. i... </p>
-          <br />
-          <p>
-            <b>&#8226;</b> create websites,
-          </p>
-          <p>
-            <b>&#8226;</b> do full stack web development!,
-          </p>
-          <p>
-            {" "}
-            <b>&#8226;</b> teach physics,
-          </p>
-          <p>
-            <b>&#8226;</b> like to paint
-          </p>
-          <br />
-          interested in working with me? send an email to{" "}
-          <b>zainabperween577@gmail.com</b>
-        </div>
-        <br />
-        <div className="edu">
-          <h3>EDUCATION</h3>
-          <p>Bachelor of Computer Applications</p>
-          <p>(JAMSHEDPUR WOMEN'S UNIVERITY 2026)</p>
-        </div>
-        <div className="hey">
-          <h3>OTHER INTERESTS</h3>
-
-          <p>
-            <b>&#8226;</b> leetcode,
-          </p>
-          <p>
-            <b>&#8226;</b> painting,
-          </p>
-          <p>
-            {" "}
-            <b>&#8226;</b> little bit of electronics hehe!,
-          </p>
-
-          <br />
-        </div>
-
-        <div className="edu">
-          <h3>LANGUAGE PROFICIENCY</h3>
-          <p>
-            i can fluently speak <b>English</b> and <b>Hindi</b>
-          </p>
-        </div>
-        <br />
+       <p>I'm a final-year BCA student and full-stack developer who loves building real things — not just running them locally. From collaborative storytelling platforms to a custom Git version control system built from scratch, my projects tend to involve problems I find genuinely interesting and solutions I actually want to use.</p>
+       <p>My stack centers on the MERN ecosystem — MongoDB, Express, React, and Node — with additional experience in Python, PHP, and cloud tools like AWS S3. I care a lot about clean architecture, and I've been lucky enough to test that in real production environments through internships at Avijo and Tata Motors.</p>
+       
+       
+       
+      
+        
         <br />
       </div>
     </>

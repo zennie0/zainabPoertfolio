@@ -7,7 +7,6 @@ import useSound from "use-sound";
 import "./App.css";
 
 
-
 function Bonus() {
     const navigate = useNavigate();
       const clickSound = new Howl({
@@ -39,7 +38,7 @@ function Bonus() {
                 <a   onClick={()=>clickSound.play()} href="https://www.linkedin.com/in/zainab-perween-37a0312aa/">
                     <img src="./imgin.jpeg" alt="" /><br />linkedin
                 </a>
-                <a  onClick={()=>clickSound.play()}  href="mailto:zainabperween577@gmail.com">
+                <a  onClick={()=>clickSound.play()}  href="zainabperween577@gmail.com">
                     <img src="./imgemail.jpeg" alt="" />
                     <br />Email
                 </a>
@@ -64,16 +63,24 @@ function Bonus() {
 
             <h2>PROJECT LINKS</h2>
             <br />
+
             <div className="img">
-                <a  onClick={()=>clickSound.play()}  href="https://borrow-basket.onrender.com/listings" >
+                <a target="_blank" onClick={()=>clickSound.play()}  href="https://github.com/zennie0/Kosowa" >
+                    <img src="./kosowaimg.jpg" alt="" /><br />Kosowa
+                </a>
+                <a target="_blank" onClick={()=>clickSound.play()}  href="https://github.com/zennie0/version-control" >
+                    <img src="./git_img.jpg" alt="" /><br />GitHub Clone
+                </a>
+                <a target="_blank" onClick={()=>clickSound.play()}  href="https://borrow-basket.onrender.com/listings" >
                     <img src="./basimg.jpeg" alt="" /><br />Borrowbasket
                 </a>
-                <a  onClick={()=>clickSound.play()}  href="https://weather-app-oihn.onrender.com/">
+                <a target="_blank"  onClick={()=>clickSound.play()}  href="https://weather-app-oihn.onrender.com/">
                     <img src="./wetimg.jpeg" alt="" /><br />Weather app
                 </a>
-                <a  onClick={()=>clickSound.play()}  href="https://zainabpoertfolio.onrender.com">
+                <a target="_blank"  onClick={()=>clickSound.play()}  href="https://portfolio-mk5j.onrender.com/">
                     <img src="./portimg.jpeg" alt="" /><br />Portfolio
                 </a>
+               
             </div>
         </div>
         </div>
@@ -82,4 +89,3 @@ function Bonus() {
 }
 
 export default Bonus;
-// somthing

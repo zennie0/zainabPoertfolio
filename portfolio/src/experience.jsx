@@ -32,19 +32,25 @@ function Experience() {
           <h3>EXPERIENCE</h3>
           <h3 onClick={() => handleClick()} style={{cursor:"pointer"}}>X</h3>
         </div>
-          <p>hey! i do full stack web development and as experience i have made several projects </p><p>that you can find attached to my resume in my portfolio projects section. </p>
-          <p>as for in industry experience i have none yet. So i am activly looking for an internhip and is open to work</p>
-          <br /><br /><br />
-<hr />
-         <p>other than that i have non technical experience</p>
-         <p>i have worked as a physics and computer teacher for 2  years. </p>
-         <hr />
-         <p>Although I've genuinely enjoyed my teaching job, I've always known that it wasn't the career path I wanted to pursue forever. Teaching has been a meaningful experience — </p><p>it allowed me to connect with students, explain complex ideas in simple ways, and build strong communication and leadership skills. I started teaching while I was still in college, and it not only helped me become more confident and responsible but also taught me the value of patience and teamwork.
+         <h2>Software Development Intern</h2>
+         <h4>Tata Motors  </h4>
+         <p>"May 2026 - June 2026"</p>
+         <p>– Contributed to the Vahak Clone, a freight marketplace group project supporting Shipper, Transporter, Driver, and
+Admin roles. </p>
+<p>– Worked on a four-role platform with live bidding, OTP-based delivery confirmation, and a fraud detection module
+built in PHP and MySQL.  </p>
+<p>– Collaborated with team members on feature implementation, code reviews, and integration of payment and
+dashboard workflows.</p>
+<br />
+         <h2>Software Development Intern</h2>
+         <h4>Avijo (startup)  </h4>
+         <p>"April 2026 - July 2026"</p>
+         <p>– Worked directly on the production codebase, identifying and fixing real-world bugs in a live application. </p>
+<p>– Raised pull requests (PRs) for bug fixes and feature improvements, participating in code review cycles with the
+engineering team.</p>
+<p> – Gained hands-on experience with production-grade development practices, version control workflows, and agile
+collaboration.</p>
 
-However, my true passion has always been computers, technology, and problem-solving. </p><p>I've always been fascinated by how machines work and how technology can be used to create, innovate, and make people's lives easier. As I'm now about to graduate, I feel it's the right time to take the next step and begin my journey in the tech field — something I've always been deeply excited about and truly want to grow in.</p>
-
-
- <p></p>
         <div className="img">
             <div className="div"></div>
             <div className="div">
