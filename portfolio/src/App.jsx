@@ -1,33 +1,19 @@
 
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Hero from "./hero.jsx"
-import Levels from "./levels.jsx"
-import About from "./about.jsx"
-import Project from "./project.jsx"
-import './App.css'
+import {useState,useEffect} from 'react';
+import Loader from "./loader.jsx";
+import Home from "./Home.jsx";
 
 function App() {
- 
+    const [loading,setLoading] = useState(true);
 
-  return (
-    <>
-      <Router>
-      <Routes>
-        <Route path="/" element={<Hero />} />
-        <Route path="/levels" element={<Levels />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/project" element={<Project />} />
-        
-      </Routes>
-    </Router>
-  
-  
+    useEffect(()=>{
+        const timer = setTimeout(()=>{
+        setLoading(false);
+    },6000);
 
-  
-    
-    
-    </>
-     )
+    return ()=> clearTimeout(timer);
+    },[]);
+return loading? <Loader/> :<Home/>;
 }
 
-export default App
+export default App;

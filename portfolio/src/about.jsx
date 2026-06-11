@@ -1,56 +1,89 @@
-import React from "react";
-import Pfp from "/pfp.jpeg";
-import { Howl } from "howler";
-import { useNavigate } from "react-router-dom";
-import { useEffect } from "react";
-import Bgmusic from "/bgmusic.mp3";
-import useSound from "use-sound";
-import "./App.css";
-function About() {
-  const navigate = useNavigate();
-  const clickSound = new Howl({
-    src: ["./click.mp3"],
-  });
+import { useState } from "react";
 
-  const handleClick = () => {
-    clickSound.play();
-    navigate("/levels");
-  };
 
-  const [playy, { stop }] = useSound(Bgmusic, { loop: true, volume: 0.3 });
-  useEffect(() => {
-    playy();
-    return () => stop();
-  }, [playy, stop]);
+export default function About() {
+  const [openEnvelope, setOpenEnvelope] = useState(false);
+
   return (
-    <>
-      <div className="about">
-        <div className="nav">
-          <h3>ABOUT</h3>
-          <h3 onClick={() => handleClick()} style={{cursor:"pointer"}}>X</h3>
-        </div>
-        <div className="intro">
-          <img src={Pfp} alt="" />
-          <div className="introo">
-            <h1>Zainab Perween</h1>
-            <p>
-             Full-Stack Developer · BCA '26 · Jamshedpur
-            </p>
+    <section className="about-section" id="about">
+
+      <h1 className="about-title">ABOUT ME</h1>
+
+      <div className="about-container">
+
+        <div className="profile-sphere">
+          <div className="pulse-ring"></div>
+          <div className="profile-core">
+            ZP
           </div>
         </div>
-        <br />
 
-       <p>I'm a final-year BCA student and full-stack developer who loves building real things — not just running them locally. From collaborative storytelling platforms to a custom Git version control system built from scratch, my projects tend to involve problems I find genuinely interesting and solutions I actually want to use.</p>
-       <p>My stack centers on the MERN ecosystem — MongoDB, Express, React, and Node — with additional experience in Python, PHP, and cloud tools like AWS S3. I care a lot about clean architecture, and I've been lucky enough to test that in real production environments through internships at Avijo and Tata Motors.</p>
-       
-       
-       
-      
-        
-        <br />
+        <div className="about-content">
+
+          <h2>Zainab Perween</h2>
+
+          <h3>
+            Full Stack Developer • MERN Developer • Problem Solver
+          </h3>
+
+          <p>
+            I am a BCA graduate passionate about building modern web
+            applications and solving real-world problems through technology.
+            My experience ranges from developing production-grade applications
+            to creating full-stack MERN projects.
+
+            I have worked as a Software Development Intern at Tata Motors and
+            Avijo where I contributed to live products, fixed bugs,
+            implemented features and collaborated within engineering teams.
+
+            Beyond coding, I enjoy drawing and creating artwork, which helps
+            me stay creative and improve my design thinking.
+          </p>
+
+          <div className="skills-grid">
+            <span>JavaScript</span>
+            <span>React</span>
+            <span>Next.js</span>
+            <span>Node.js</span>
+            <span>Express</span>
+            <span>MongoDB</span>
+            <span>MySQL</span>
+            <span>PHP</span>
+            <span>Java</span>
+            <span>Python</span>
+          </div>
+        </div>
       </div>
-    </>
+
+      {/* Envelope */}
+
+      <div
+        className={`envelope-wrapper ${openEnvelope ? "open" : ""}`}
+        onClick={() => setOpenEnvelope(!openEnvelope)}
+      >
+
+        <div className="envelope">
+          <div className="letter">
+
+            <h2>Some Of My Artwork</h2>
+
+            <div className="art-gallery">
+
+              <img src="/d1.jpeg" alt="" />
+              <img src="/d2.jpeg" alt="" />
+              <img src="/d3.jpeg" alt="" />
+              <img src="/d4.jpeg" alt="" />
+             
+              <img src="/d6.jpeg" alt="" />
+              <img src="/d7.jpeg" alt="" />
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </section>
   );
 }
-
-export default About;

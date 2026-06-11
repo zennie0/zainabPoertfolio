@@ -1,79 +1,92 @@
-import React from 'react'
-import './App.css'
-import {Howl} from "howler";
-import { useEffect } from 'react';
-import Bgmusic from "/bgmusic.mp3";
-import useSound from 'use-sound';
-import { useNavigate } from "react-router-dom";
-function Project() {
-  const navigate = useNavigate();
-   const clickSound = new Howl({
-                  src:["./click.mp3"]
-              })
-  
-              const handleClick=()=>{
-                  clickSound.play();
-                  navigate("/levels");
-              }
-              const [playy,{stop}]= useSound(Bgmusic,{loop:true,volume:0.3})
-                      useEffect(()=>{
-                          playy();
-                          return()=>stop();
-              
-              
-                      },[playy,stop])
-    return (
-        <>
-        <div className="project">
-           <div className="nav">
-               <h3>PROJECT</h3>
-               <h3 onClick={()=>handleClick()} style={{cursor:"pointer"}}>X</h3>
-            </div>
-              <p>⭐⭐you will get the links of all projects once you will reach "bonus" level.⭐⭐</p>
-            <p>i have made several projects some of them are ...</p>
-            
-            <br />
-            <div className="basket">
-              <h3>BORROW BASKET</h3>
-              <p>I have made this web application using MERN stack. Borrow basket is a lending and borrowing platform that let people lend there things and earn some money.</p>
-              <p>It focus on sustainable environment and reduces over production and over consuption of goods. although the project is not public yet but i am planning to do it soon. i will also be making changes in future</p>
-              <h5>Technologies used</h5>
-              <p><b>&#8226;</b> Javascript,</p>
-                <p><b>&#8226;</b> MongoDB,</p>
-               <p> <b>&#8226;</b> HTML, CSS</p>
-                 <p><b>&#8226;</b> Node js</p>
-                 <p><b>&#8226;</b>Bootstrap for UI</p>
-                 <p><b>&#8226;</b> mongoDb atlas for cloud database</p>
-                 <p><b>&#8226;</b> cloudanary for uploading images</p>
-            </div>
-            <br />
-            <div className="weather">
-              <h3>WEATHER APP</h3>
-              <p>It is a react project made to get current weather of any city of the world. It is made using apis and ingrating APIs.</p>
-              <h5>Technologies used</h5>
-              <p><b>&#8226;</b> Javascript,</p>
-              <p><b>&#8226;</b> React,</p>
-                <p><b>&#8226;</b> MaterialUI,</p>
-               <p> <b>&#8226;</b> weather APIs</p>
-                 
-                 
-            </div>
-            <br />
-            <div className="port">
-              <h3>PORTFOLIO</h3>
-              <p>My portfolio website is mostly frontend and it is build using React and pure 
-              CSS. This project is more like y2k vibes when website were use to be cool, i was going for that theme. i have used some react frameworks to make the website cool. like button sound effect etc.
-              </p>
-              <h5>Frameworks used</h5>
-              <p><b>&#8226;</b> Howler,</p>
-              <p><b>&#8226;</b> use-sound,</p>
-               
-            </div>
-            <br />
-            
-        </div>
-        </>
-      );
-}
+// Projects.jsx
+import { motion } from "framer-motion";
+import { useState } from "react";
 
-export default Project;
+const projects = [
+  {
+    id: 1,
+    title: "Kosowa",
+    image: "/kosowa.jpg",
+    tech: ["React", "MERN"],
+    description:"A collaborative story writting app",
+    link:"https://kosowa.vercel.app/"
+  },
+  {
+    id: 2,
+    title: "Version Control",
+    image: "/gh.jpg",
+    tech: ["MERN", "AWS"],
+    description:"Github clone",
+    link:"https://github.com/zennie0/version-control"
+  },
+  {
+    id: 3,
+    title: "Borrow Basket",
+    image: "/bb.jpg",
+    tech: ["JS", "MongoDB","Express"],
+    description:"A borrowing and lending platform.",
+    link:"https://borrow-basket.onrender.com/listings"
+  },
+  {
+    id: 4,
+    title: "Weather App",
+    image: "/weather.jpg",
+    tech: ["JS", "HTML","CSS"],
+    description:"Weather prediction app",
+    link:"https://weather-app-oihn.onrender.com/"
+  },
+];
+
+export default function Project() {
+  const [hovered, setHovered] = useState(null);
+
+  return (
+    <section className="projects-section">
+        
+      <div className="projects-track">
+        {projects.map((project) => (
+          <motion.div
+            key={project.id}
+            className={`project-card ${
+              hovered && hovered !== project.id ? "dim" : ""
+            }`}
+            onHoverStart={() => setHovered(project.id)}
+            onHoverEnd={() => setHovered(null)}
+            whileHover={{
+              scale: 1.15,
+              y: -40,
+              zIndex: 100,
+            }}
+            transition={{
+              duration: 0.4,
+              ease: "easeOut",
+            }}
+          >
+            <div className="card-image">
+              <img src={project.image} alt={project.title} />
+            </div>
+
+            <div className="card-content">
+              <span className="project-number">
+                {String(project.id).padStart(2, "0")}
+              </span>
+
+              <h2>{project.title}</h2>
+
+              <div className="tech-tags">
+                {project.tech.map((tech) => (
+                  <span key={tech}>{tech}</span>
+                ))}
+              </div>
+              <div className="project-des">
+                <p>{project.description}</p>
+              </div>
+
+              <button><a target="_blank"  href={project.link}  style={{textDecoration:"none", color:"white"}}>Project Link</a></button>
+            </div>
+          </motion.div>
+        ))}
+      </div>
+    </section>
+  );
+}

@@ -1,44 +1,35 @@
-import React from 'react';
-import './App.css'
-import {Howl} from "howler";
-import { useNavigate } from "react-router-dom";
-import { useEffect } from 'react';
-import Bgmusic from "/bgmusic.mp3";
-import useSound from 'use-sound';
-
-
+import React from 'react'
+import Galaxy from "./Galaxy"
 function Hero() {
-    const navigate = useNavigate();
-        const clickSound = new Howl({
-            src:["./click.mp3"]
-        })
-        const [playy,{stop}]= useSound(Bgmusic,{loop:true,volume:0.3})
-        useEffect(()=>{
-            playy();
-            return()=>stop();
+    return ( <div className="hero"  >
+   
+      {/* <div className="stars"></div> */}
+      <div className="stars stars-1"></div>
+<div className="stars stars-2"></div>
+<div className="stars stars-3"></div>
 
+      <div className="hero-content">
+        <p className="hero-tag">
+          FULL STACK • MERN • CREATIVE DEV
+        </p>
 
-        },[playy,stop])
-    
-        const handleClick =()=>{
-          clickSound.play();
-            navigate("/levels")
-        }
+        <div className="title-wrapper">
+          <h1 className="outline">ZAINAB</h1>
+          <h1 className="main-title">ZAINAB</h1>
 
-    return (  
-        <>
-        <div className="hero">
-        <div className="nav">
-               <h3>HOME</h3>
-            </div>
+          <h2 className="outline second">PERWEEN</h2>
+          <h2 className="sub-title">PERWEEN</h2>
+        </div>
 
-          <a href="#">
-           <img src="./playbtn.png" className='btn' onClick={handleClick} />
-           </a>
-            </div>
+        <p className="description">
+          Building immersive <span>web experiences</span> — code that
+          performs, designs that last.
+        </p>
+
         
-        </>
-    );
+      </div>
+
+    </div> );
 }
 
 export default Hero;
