@@ -27,7 +27,7 @@ body{
   background-position: center;
   z-index: -1;
 
-  mask-image: url(inkbg.gif);
+  mask-image: url(/inkbg.gif);
   mask-size: cover;
   mask-position: center;
 }
