@@ -22,7 +22,7 @@ body{
   content:'';
   position: absolute;
   inset:0;
-  background-image: url(bg4.jpg);
+  background-image: url(/bg4.jpg);
   background-size:cover;
   background-position: center;
   z-index: -1;
