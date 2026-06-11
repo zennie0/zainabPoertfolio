@@ -2,7 +2,7 @@ import React from 'react';
 import Navbar from './Navbar';
 import Skills from './Skills';
 import Project from './project';
-import Hero from './Hero';
+import Hero from './hero';
 import Contact from './Contact';
 import Galaxy from './Galaxy';
 
