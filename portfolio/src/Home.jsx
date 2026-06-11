@@ -7,7 +7,7 @@ import Contact from './Contact';
 import Galaxy from './Galaxy';
 
 import Exp from './Exp';
-import About from './About';
+import About from './about';
 function Home() {
     return ( <>
    <nav><Navbar/></nav>
