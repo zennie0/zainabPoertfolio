@@ -1,6 +1,6 @@
 import React from 'react';
 import Navbar from './Navbar';
-import Skills from './Skills';
+import Skills from './skills';
 import Project from './project';
 import Hero from './hero';
 import Contact from './Contact';
