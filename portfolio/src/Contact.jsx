@@ -78,7 +78,7 @@ export default function Contact() {
           </div>
 
           <button type="submit">
-            INITIATE TRANSMISSION
+            Send message
           </button>
 
         </form>
