@@ -13,17 +13,17 @@ export default function Exp() {
         "Collaborated on dashboard workflows and payment integration."
       ]
     },
-    {
-      company: "Avijo",
-      role: "Software Development Intern",
-      date: "Apr 2026 - July 2026",
-      points: [
-        "Worked directly on production code.",
-        "Fixed real-world bugs in a live application.",
-        "Raised PRs and participated in code reviews.",
-        "Learned agile workflows and production-grade development."
-      ]
-    }
+    // {
+    //   company: "Avijo",
+    //   role: "Software Development Intern",
+    //   date: "Apr 2026 - July 2026",
+    //   points: [
+    //     "Worked directly on production code.",
+    //     "Fixed real-world bugs in a live application.",
+    //     "Raised PRs and participated in code reviews.",
+    //     "Learned agile workflows and production-grade development."
+    //   ]
+    // }
   ];
 
   return (
