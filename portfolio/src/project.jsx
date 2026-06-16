@@ -5,6 +5,14 @@ import { useState } from "react";
 const projects = [
   {
     id: 1,
+    title: "Pacman",
+    image: "/pacmanimg.jpg",
+    tech: ["Html", "CSS", "Javascript"],
+    description:"An arcade game pacman",
+    link:"https://pacman-beta-drab.vercel.app/"
+  },
+  {
+    id: 2,
     title: "Kosowa",
     image: "/kosowa.jpg",
     tech: ["React", "MERN"],
@@ -12,7 +20,7 @@ const projects = [
     link:"https://kosowa.vercel.app/"
   },
   {
-    id: 2,
+    id: 3,
     title: "Version Control",
     image: "/gh.jpg",
     tech: ["MERN", "AWS"],
@@ -20,7 +28,7 @@ const projects = [
     link:"https://github.com/zennie0/version-control"
   },
   {
-    id: 3,
+    id: 4,
     title: "Borrow Basket",
     image: "/bb.jpg",
     tech: ["JS", "MongoDB","Express"],
@@ -28,7 +36,7 @@ const projects = [
     link:"https://borrow-basket.onrender.com/listings"
   },
   {
-    id: 4,
+    id: 5,
     title: "Weather App",
     image: "/weather.jpg",
     tech: ["JS", "HTML","CSS"],
