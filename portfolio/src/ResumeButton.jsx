@@ -2,7 +2,7 @@
 
 function ResumeButton() {
   return (
-    <a href="/my_resume.pdf" download="Zainab_Perween_Resume.pdf">
+    <a href="/my_resume(1).pdf" download="Zainab_Perween_Resume.pdf">
       <button className="resume-btn">
         Download Resume
       </button>
